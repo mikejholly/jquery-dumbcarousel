@@ -8,11 +8,11 @@
       $next: $that.find('.next'),
       $prev: $that.find('.prev, .previous'),
       $nav: null,
-      duration: 1000,
-      interval: 6000//,
+      duration: 500,
+      interval: 5000,
     }, opts);
 
-    opts.$slides.length > 1 ? opts.$slides : opts.$slides.children();
+    opts.$slides = opts.$slides.length > 1 ? opts.$slides : opts.$slides.children();
 
     var t, $first = opts.$slides.eq(0), $current = $first, $next;
     if (!opts.$nav) {
