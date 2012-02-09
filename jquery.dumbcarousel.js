@@ -14,6 +14,9 @@
 
     opts.$slides = opts.$slides.length > 1 ? opts.$slides : opts.$slides.children();
 
+
+console.log(opts.$slides);
+
     var t, $first = opts.$slides.eq(0), $current = $first, $next;
     if (!opts.$nav) {
       $.each(['nav a', 'ul li', '.nav a', '.nav li'], function(i) {
