@@ -4,7 +4,7 @@
 
     // Default options
     opts = $.extend({
-      $slides: $that.find('.slides'),
+      $slides: $that.find('.slides, #slides'),
       $next: $that.find('.next'),
       $prev: $that.find('.prev, .previous'),
       $nav: null,
@@ -13,9 +13,6 @@
     }, opts);
 
     opts.$slides = opts.$slides.length > 1 ? opts.$slides : opts.$slides.children();
-
-
-console.log(opts.$slides);
 
     var t, $first = opts.$slides.eq(0), $current = $first, $next;
     if (!opts.$nav) {
