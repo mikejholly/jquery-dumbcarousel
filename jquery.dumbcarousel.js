@@ -8,8 +8,8 @@
       $next: $that.find('.next'),
       $prev: $that.find('.prev, .previous'),
       $nav: null,
-      duration: 500,
-      interval: 5000,
+      duration: 1200,
+      interval: 6000,
     }, opts);
 
     opts.$slides = opts.$slides.length > 1 ? opts.$slides : opts.$slides.children();
